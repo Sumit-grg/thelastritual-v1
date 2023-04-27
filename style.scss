@@ -1,0 +1,94 @@
+@import url('https://fonts.cdnfonts.com/css/built-titling');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+video{ 
+  min-width: 100%;
+  position: fixed;
+  top:0;
+  z-index: -999;
+  top: 50%; 
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  min-width: 100%; 
+  min-height: 100%; 
+  width: auto; 
+  height: auto;
+  z-index: -1000; 
+  overflow: hidden;
+}
+
+.shy-logo {
+  padding: 10px;
+  animation: fadeIn 2s ease-in;
+  img {
+    border-radius: 10px;
+    width: 50px;
+    opacity: 0.7;
+    filter: sepia(0.6);
+    &:hover{
+      opacity: 1;
+      filter: sepia(0);
+    }
+  }
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  // border: 2px solid red;
+  height: 80vh;
+  .heading-img {
+    padding: 40px 0;
+    text-align: center;
+    img{
+      width: 60%;
+    }
+    #title1 {
+      animation: fadeIn 4s ease-in;
+      @keyframes fadeIn {   
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  
+  .credit {
+    text-align: center;
+    color: white;
+    font-family: 'Built Titling';
+    p{
+      letter-spacing: 6px;
+      font-size: x-large;
+      span{
+        font-size: medium;
+      }
+    }
+  }
+
+}
+
+.footer {
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  padding: 5px;
+  animation: Scaler3 6s 1 ease;
+  p {
+    color: rgb(212, 212, 212);
+    text-align: center;
+
+  }
+}
+
+
