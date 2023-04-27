@@ -97,8 +97,8 @@ video {
   text-align: center;
   color: white;
   font-family: 'Built Titling';
-  -webkit-animation: Scaler3 6s 1 ease;
-          animation: Scaler3 6s 1 ease;
+  -webkit-animation: Scaler3 4s 1 ease;
+          animation: Scaler3 4s 1 ease;
 }
 
 .main .credit p {
