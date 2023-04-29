@@ -2,11 +2,12 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-  background-color: rgb(26, 26, 26);
+  background-color: #1a1a1a;
 }
 
 video {
@@ -16,6 +17,7 @@ video {
   z-index: -999;
   top: 50%;
   left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
   min-width: 100%;
   min-height: 100%;
@@ -27,34 +29,60 @@ video {
 
 .shy-logo {
   padding: 10px;
-  animation: fadeIn 2s ease-in;
+  -webkit-animation: fadeIn 2s ease-in;
+          animation: fadeIn 2s ease-in;
 }
+
 .shy-logo img {
   border-radius: 10px;
   width: 50px;
   opacity: 0.7;
-  filter: sepia(0.6);
+  -webkit-filter: sepia(0.6);
+          filter: sepia(0.6);
 }
+
 .shy-logo img:hover {
   opacity: 1;
-  filter: sepia(0);
+  -webkit-filter: sepia(0);
+          filter: sepia(0);
 }
 
 .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 80vh;
 }
+
 .main .heading-img {
   text-align: center;
 }
+
 .main .heading-img img {
   width: 60%;
 }
+
 .main .heading-img #title1 {
-  animation: fadeIn 4s ease-in;
+  -webkit-animation: fadeIn 4s ease-in;
+          animation: fadeIn 4s ease-in;
 }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -63,34 +91,59 @@ video {
     opacity: 1;
   }
 }
+
 .main .credit {
   text-align: center;
   color: white;
-  font-family: "Built Titling";
-  animation: Scaler3 4s 1 ease;
+  font-family: 'Built Titling';
+  -webkit-animation: Scaler3 4s 1 ease;
+          animation: Scaler3 4s 1 ease;
 }
+
 .main .credit p {
   letter-spacing: 4px;
   font-size: large;
   letter-spacing: 4px;
   font-size: large;
 }
+
 .main .credit p span {
   font-size: medium;
   font-weight: bold;
   color: #131313;
+  color: #131313;
+  font-weight: bold;
 }
+
+@-webkit-keyframes Scaler3 {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 @keyframes Scaler3 {
   0% {
     opacity: 0;
   }
   60% {
     opacity: 0;
-    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
   }
   100% {
     opacity: 1;
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
@@ -100,8 +153,9 @@ video {
   bottom: 0;
   padding: 5px;
 }
+
 .footer p {
-  color: rgb(212, 212, 212);
+  color: #d4d4d4;
   text-align: center;
   font-size: x-small;
 }
@@ -131,7 +185,6 @@ video {
     font-size: smaller;
   }
 }
-@media (max-width: 1000px) and (min-width: 700px) {
 
 @media (max-width: 1000px) and (min-width: 700px) {
   .shy-logo {
@@ -157,4 +210,5 @@ video {
   .main .credit p span {
     font-size: small;
   }
-}/*# sourceMappingURL=style-v1.css.map */
+}
+/*# sourceMappingURL=style.css.map */
