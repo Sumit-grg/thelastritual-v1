@@ -62,7 +62,6 @@ video {
 }
 
 .main .heading-img {
-  padding: 40px 0;
   text-align: center;
 }
 
@@ -102,12 +101,14 @@ video {
 }
 
 .main .credit p {
-  letter-spacing: 6px;
-  font-size: x-large;
+  letter-spacing: 4px;
+  font-size: large;
 }
 
 .main .credit p span {
   font-size: medium;
+  font-weight: bold;
+  color: #131313;
 }
 
 @-webkit-keyframes Scaler3 {
@@ -181,7 +182,7 @@ video {
   }
 }
 
-@media (max-width: 1100px) and (min-width: 700px) {
+@media (max-width: 1000px) and (min-width: 700px) {
   .shy-logo {
     padding: 5px;
   }
