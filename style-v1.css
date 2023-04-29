@@ -1,0 +1,156 @@
+@import url("https://fonts.cdnfonts.com/css/built-titling");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(26, 26, 26);
+}
+
+video {
+  min-width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: -999;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+  overflow: hidden;
+}
+
+.shy-logo {
+  padding: 10px;
+  animation: fadeIn 2s ease-in;
+}
+.shy-logo img {
+  border-radius: 10px;
+  width: 50px;
+  opacity: 0.7;
+  filter: sepia(0.6);
+}
+.shy-logo img:hover {
+  opacity: 1;
+  filter: sepia(0);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80vh;
+}
+.main .heading-img {
+  text-align: center;
+}
+.main .heading-img img {
+  width: 60%;
+}
+.main .heading-img #title1 {
+  animation: fadeIn 4s ease-in;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.main .credit {
+  text-align: center;
+  color: white;
+  font-family: "Built Titling";
+  animation: Scaler3 4s 1 ease;
+}
+.main .credit p {
+  letter-spacing: 4px;
+  font-size: large;
+}
+.main .credit p span {
+  font-size: medium;
+  color: rgb(19, 19, 19);
+  font-weight: bold;
+}
+@keyframes Scaler3 {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.footer {
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  padding: 5px;
+}
+.footer p {
+  color: rgb(212, 212, 212);
+  text-align: center;
+  font-size: x-small;
+}
+
+@media (max-width: 700px) {
+  .shy-logo {
+    padding: 5px;
+  }
+  .shy-logo img {
+    border-radius: 5px;
+    width: 30px;
+  }
+  .main {
+    height: 80vh;
+  }
+  .main .heading-img {
+    padding: 80px 0;
+  }
+  .main .heading-img img {
+    width: 100%;
+  }
+  .main .credit p {
+    letter-spacing: 1px;
+    font-size: small;
+  }
+  .main .credit p span {
+    font-size: smaller;
+  }
+}
+@media (max-width: 1000px) and (min-width: 700px) {
+  .shy-logo {
+    padding: 5px;
+  }
+  .shy-logo img {
+    border-radius: 5px;
+    width: 30px;
+  }
+  .main {
+    height: 80vh;
+  }
+  .main .heading-img {
+    padding: 80px 0;
+  }
+  .main .heading-img img {
+    width: 80%;
+  }
+  .main .credit p {
+    letter-spacing: 2px;
+    font-size: medium;
+  }
+  .main .credit p span {
+    font-size: small;
+  }
+}/*# sourceMappingURL=style-v1.css.map */
