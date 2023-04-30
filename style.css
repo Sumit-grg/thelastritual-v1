@@ -8,6 +8,7 @@
 
 body {
   background-color: #1a1a1a;
+  font-family: 'Built Titling';
 }
 
 video {
@@ -69,6 +70,12 @@ video {
   width: 60%;
 }
 
+.main .heading-img p {
+  color: white;
+  letter-spacing: 4px;
+  font-size: xx-large;
+}
+
 .main .heading-img #title1 {
   -webkit-animation: fadeIn 6s ease-in;
           animation: fadeIn 6s ease-in;
@@ -95,9 +102,6 @@ video {
 .main .credit {
   text-align: center;
   color: white;
-  font-family: 'Built Titling';
-  -webkit-animation: Scaler3 5s 1 ease;
-          animation: Scaler3 5s 1 ease;
 }
 
 .main .credit p {
@@ -142,6 +146,25 @@ video {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
+}
+
+.main .credit .sponsor {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.main .credit .sponsor img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-color: aliceblue;
+  border-radius: 3px;
+  width: 50px;
+  height: auto;
+  margin: 0 5px;
+}
+
+.main .credit .sponsor img:first-child {
+  background-color: #8a8484;
 }
 
 .footer {
