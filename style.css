@@ -70,8 +70,8 @@ video {
 }
 
 .main .heading-img #title1 {
-  -webkit-animation: fadeIn 4s ease-in;
-          animation: fadeIn 4s ease-in;
+  -webkit-animation: fadeIn 6s ease-in;
+          animation: fadeIn 6s ease-in;
 }
 
 @-webkit-keyframes fadeIn {
@@ -96,23 +96,20 @@ video {
   text-align: center;
   color: white;
   font-family: 'Built Titling';
-  -webkit-animation: Scaler3 4s 1 ease;
-          animation: Scaler3 4s 1 ease;
+  -webkit-animation: Scaler3 5s 1 ease;
+          animation: Scaler3 5s 1 ease;
 }
 
 .main .credit p {
   letter-spacing: 4px;
   font-size: large;
-  letter-spacing: 4px;
-  font-size: large;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .main .credit p span {
   font-size: medium;
   font-weight: bold;
-  color: #131313;
-  color: #131313;
-  font-weight: bold;
+  color: #626161;
 }
 
 @-webkit-keyframes Scaler3 {
@@ -155,6 +152,7 @@ video {
 }
 
 .footer p {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   color: #d4d4d4;
   text-align: center;
   font-size: x-small;

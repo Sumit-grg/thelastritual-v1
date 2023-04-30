@@ -54,7 +54,7 @@ video{
       width: 60%;
     }
     #title1 {
-      animation: fadeIn 4s ease-in;
+      animation: fadeIn 6s ease-in;
       @keyframes fadeIn {   
         0% {
           opacity: 0;
@@ -88,17 +88,14 @@ video{
     p{
       letter-spacing: 4px;
       font-size: large;
-      letter-spacing: 4px;
-      font-size: large;
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
       span{
         font-size: medium;
         font-weight: bold;
-        color: rgb(19, 19, 19);
-        color: rgb(19, 19, 19);
-        font-weight: bold;
+        color: rgb(98, 97, 97);
       }
     }
-    animation: Scaler3 4s 1 ease;
+    animation: Scaler3 5s 1 ease;
     @keyframes Scaler3 {
       0% {
         opacity: 0; 
@@ -121,6 +118,7 @@ video{
   padding: 5px;
   // animation: Scaler3 6s 1 ease;
   p {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     color: rgb(212, 212, 212);
     text-align: center;
     font-size:x-small;
