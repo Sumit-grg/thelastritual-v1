@@ -54,13 +54,8 @@ video{
       // border: 2px solid green;
       width: 60%;
     }
-    p{
-      color: white;
-      letter-spacing: 4px;
-      font-size: xx-large;
-    }
     #title1 {
-      animation: fadeIn 6s ease-in;
+      animation: fadeIn 5s ease-in;
       @keyframes fadeIn {   
         0% {
           opacity: 0;
@@ -68,6 +63,26 @@ video{
         100% {
           opacity: 1;
         }
+      }
+    }
+    p{
+      color: white;
+      letter-spacing: 4px;
+      font-size: 3em;
+      animation: fadeIn2 4s ease-in;
+      @keyframes fadeIn2 {
+        0% {
+          opacity: 0;
+        }
+        80%{
+          opacity: 0;
+        }
+        100%{
+          opacity: 1;
+        }
+      }
+      span {
+        color: rgb(132, 28, 28);
       }
     }
     // #title2 {
@@ -101,12 +116,12 @@ video{
         color: rgb(98, 97, 97);
       }
     }
-    // animation: Scaler3 5s 1 ease;
+    animation: Scaler3 5s ease;
     @keyframes Scaler3 {
       0% {
         opacity: 0; 
       }
-      60%{
+      50%{
         opacity: 0; transform: scale(0.7);
       }
       100% {
@@ -117,6 +132,7 @@ video{
     .sponsor {
       text-align: center;
       margin-top: 20px;
+      animation: Scaler3 6s ease;
       img{
         object-fit: contain;
         background-color: aliceblue;

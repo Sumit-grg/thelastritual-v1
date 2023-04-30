@@ -70,15 +70,9 @@ video {
   width: 60%;
 }
 
-.main .heading-img p {
-  color: white;
-  letter-spacing: 4px;
-  font-size: xx-large;
-}
-
 .main .heading-img #title1 {
-  -webkit-animation: fadeIn 6s ease-in;
-          animation: fadeIn 6s ease-in;
+  -webkit-animation: fadeIn 5s ease-in;
+          animation: fadeIn 5s ease-in;
 }
 
 @-webkit-keyframes fadeIn {
@@ -99,9 +93,47 @@ video {
   }
 }
 
+.main .heading-img p {
+  color: white;
+  letter-spacing: 4px;
+  font-size: 3em;
+  -webkit-animation: fadeIn2 4s ease-in;
+          animation: fadeIn2 4s ease-in;
+}
+
+@-webkit-keyframes fadeIn2 {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn2 {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.main .heading-img p span {
+  color: #841c1c;
+}
+
 .main .credit {
   text-align: center;
   color: white;
+  -webkit-animation: Scaler3 5s ease;
+          animation: Scaler3 5s ease;
 }
 
 .main .credit p {
@@ -120,7 +152,7 @@ video {
   0% {
     opacity: 0;
   }
-  60% {
+  50% {
     opacity: 0;
     -webkit-transform: scale(0.7);
             transform: scale(0.7);
@@ -136,7 +168,7 @@ video {
   0% {
     opacity: 0;
   }
-  60% {
+  50% {
     opacity: 0;
     -webkit-transform: scale(0.7);
             transform: scale(0.7);
@@ -151,6 +183,8 @@ video {
 .main .credit .sponsor {
   text-align: center;
   margin-top: 20px;
+  -webkit-animation: Scaler3 6s ease;
+          animation: Scaler3 6s ease;
 }
 
 .main .credit .sponsor img {
