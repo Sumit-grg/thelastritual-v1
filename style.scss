@@ -177,27 +177,32 @@ nav {
 }
 
 .main-info {
-  background: rgba(255, 255, 255, 0.06);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(2.1px);
-  -webkit-backdrop-filter: blur(2.1px);
-  border: 1px solid rgba(255, 255, 255, 0.03);
-  
-  justify-content: space-between;
-  align-items: center;
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
   padding: 40px;
   .poster {
-    display: inline;
+    border: 2px dotted green;
     // text-align: center;
     img {
-      width: 60%;
-      border-radius: 20px 0 20px 0;
-      box-shadow: 2px 2px 2px rgb(91, 91, 91);
+      background: rgba(255, 255, 255, 0.06);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(2.1px);
+      -webkit-backdrop-filter: blur(2.1px);
+      border: 1px solid rgba(255, 255, 255, 0.03);
+      width: 50%;
+      padding: 5px;
     }
   }
   .plot {
-    display: inline;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.1px);
+    -webkit-backdrop-filter: blur(2.1px);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    border: 2px dotted green;
     letter-spacing: 2px;
     font-size: large;
     color: white;
@@ -205,6 +210,7 @@ nav {
     // border: 2px dotted blue;
     width: 80%;
     p{
+      padding: 5px;
       margin: 0 auto;
       font-size: xx-large;
       span{
