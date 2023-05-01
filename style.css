@@ -79,10 +79,8 @@ nav .shy-logo img:hover {
           filter: sepia(0);
 }
 
-.main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.main-home {
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -93,17 +91,17 @@ nav .shy-logo img:hover {
   height: 80vh;
 }
 
-.main .heading-img {
+.main-home .heading-img {
   text-align: center;
 }
 
-.main .heading-img img {
+.main-home .heading-img img {
   width: 60%;
 }
 
-.main .heading-img #title1 {
-  -webkit-animation: fadeIn 5s ease-in;
-          animation: fadeIn 5s ease-in;
+.main-home .heading-img #title1 {
+  -webkit-animation: fadeIn 4s ease-in;
+          animation: fadeIn 4s ease-in;
 }
 
 @-webkit-keyframes fadeIn {
@@ -124,12 +122,12 @@ nav .shy-logo img:hover {
   }
 }
 
-.main .heading-img p {
+.main-home .heading-img p {
   color: white;
   letter-spacing: 4px;
   font-size: 3em;
-  -webkit-animation: fadeIn2 4s ease-in;
-          animation: fadeIn2 4s ease-in;
+  -webkit-animation: fadeIn2 3s ease-in;
+          animation: fadeIn2 3s ease-in;
 }
 
 @-webkit-keyframes fadeIn2 {
@@ -156,24 +154,24 @@ nav .shy-logo img:hover {
   }
 }
 
-.main .heading-img p span {
+.main-home .heading-img p span {
   color: #841c1c;
 }
 
-.main .credit {
+.main-home .credit {
   text-align: center;
   color: white;
-  -webkit-animation: Scaler3 5s ease;
-          animation: Scaler3 5s ease;
+  -webkit-animation: Scaler3 4s ease;
+          animation: Scaler3 4s ease;
 }
 
-.main .credit p {
+.main-home .credit p {
   letter-spacing: 4px;
   font-size: large;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-.main .credit p span {
+.main-home .credit p span {
   font-size: medium;
   font-weight: bold;
   color: #626161;
@@ -211,14 +209,14 @@ nav .shy-logo img:hover {
   }
 }
 
-.main .credit .sponsor {
+.main-home .credit .sponsor {
   text-align: center;
   margin-top: 20px;
-  -webkit-animation: Scaler3 6s ease;
-          animation: Scaler3 6s ease;
+  -webkit-animation: Scaler3 5s ease;
+          animation: Scaler3 5s ease;
 }
 
-.main .credit .sponsor img {
+.main-home .credit .sponsor img {
   -o-object-fit: contain;
      object-fit: contain;
   background-color: aliceblue;
@@ -228,7 +226,7 @@ nav .shy-logo img:hover {
   margin: 0 5px;
 }
 
-.main .credit .sponsor img:first-child {
+.main-home .credit .sponsor img:first-child {
   background-color: #8a8484;
 }
 
