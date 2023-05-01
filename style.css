@@ -29,7 +29,6 @@ video {
 }
 
 nav {
-  border: 1px dotted red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,17 +41,20 @@ nav {
 }
 
 nav .link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  border: 1px solid blue;
+  margin-right: 40px;
 }
 
 nav .link ul {
-  border: 1px dotted green;
+  display: inline-block;
+  margin: 0 20px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  color: #d4d4d4;
+  font-size: x-large;
+  letter-spacing: 2px;
+}
+
+nav .link ul:hover {
+  cursor: pointer;
 }
 
 nav .shy-logo {

@@ -27,21 +27,33 @@ video{
   overflow: hidden;
 }
 nav {
-  border: 1px dotted red;
+  // border: 1px dotted red;
   display: flex;
   align-items: center;
   justify-content: space-between;
   .link{
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid blue;
+    // border: 1px solid blue;
+    // display: flex;
+    // justify-content: space-between;
+    // width: 10%;
+    margin-right: 40px;
     ul {
-      border: 1px dotted green;
+      display: inline-block;
+      margin: 0 20px;
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+      color: rgb(212, 212, 212);
+      // border: 1px dotted green;
+      font-size: x-large;
+      letter-spacing: 2px;
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
   .shy-logo {
     padding: 10px;
     animation: fadeIn 2s ease-in;
+    // border: 2px solid blue;
     img {
       border-radius: 10px;
       width: 50px;
