@@ -48,7 +48,7 @@ nav .link ul {
   display: inline-block;
   margin: 0 20px;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-  color: #d4d4d4;
+  color: white;
   font-size: x-large;
   letter-spacing: 2px;
   padding: 5px;
@@ -231,14 +231,7 @@ nav .shy-logo img:hover {
 }
 
 .main-info {
-  padding: 40px;
-}
-
-.main-info .poster {
-  border: 2px dotted green;
-}
-
-.main-info .poster img {
+  text-align: center;
   background: rgba(255, 255, 255, 0.06);
   border-radius: 16px;
   -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -246,35 +239,39 @@ nav .shy-logo img:hover {
   backdrop-filter: blur(2.1px);
   -webkit-backdrop-filter: blur(2.1px);
   border: 1px solid rgba(255, 255, 255, 0.03);
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px;
+}
+
+.main-info .poster {
+  margin-top: 10px;
+}
+
+.main-info .poster img {
+  border-radius: 16px;
   width: 50%;
   padding: 5px;
 }
 
 .main-info .plot {
-  background: rgba(255, 255, 255, 0.06);
-  border-radius: 16px;
-  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(2.1px);
-  -webkit-backdrop-filter: blur(2.1px);
-  border: 1px solid rgba(255, 255, 255, 0.03);
-  border: 2px dotted green;
   letter-spacing: 2px;
   font-size: large;
   color: white;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-  width: 80%;
 }
 
 .main-info .plot p {
   padding: 5px;
   margin: 0 auto;
-  font-size: xx-large;
+  font-size: 2em;
 }
 
 .main-info .plot p span {
   font-weight: bold;
-  font-size: xx-large;
+  font-size: 2em;
 }
 
 .footer {
