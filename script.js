@@ -27,10 +27,9 @@ info.addEventListener("click", ()=>{
   home.style.removeProperty("border-bottom");
 
   mainHome.style.display = "none";
-  mainInfo.style.removeProperty = "none";
+  mainInfo.style.display = "inherit";
   mainCC.style.display ="none";
   console.log("info click");
-  console.log(mainCC.style.display)
 
 })
 
@@ -41,7 +40,7 @@ castCrew.addEventListener("click", ()=>{
 
   mainHome.style.display = "none";
   mainInfo.style.display = "none";
-  mainCC.style.display ="none";
+  mainCC.style.display = "inherit";
 
   console.log("castcrew click");
 })
