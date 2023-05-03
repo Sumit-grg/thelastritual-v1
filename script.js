@@ -27,9 +27,10 @@ info.addEventListener("click", ()=>{
   home.style.removeProperty("border-bottom");
 
   mainHome.style.display = "none";
-  mainInfo.style.display = "flex";
+  mainInfo.style.removeProperty = "none";
   mainCC.style.display ="none";
   console.log("info click");
+  console.log(mainCC.style.display)
 
 })
 

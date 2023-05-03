@@ -236,14 +236,15 @@ nav .shy-logo img:hover {
   border-radius: 16px;
   -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(2.1px);
-  -webkit-backdrop-filter: blur(2.1px);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   border: 1px solid rgba(255, 255, 255, 0.03);
   margin: 0 auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 40px;
+  width: 90vw;
 }
 
 .main-info .poster {
@@ -269,7 +270,7 @@ nav .shy-logo img:hover {
   font-size: 2em;
 }
 
-.main-info .plot p span {
+.main-info .plot span {
   font-weight: bold;
   font-size: 2em;
 }
@@ -289,28 +290,53 @@ nav .shy-logo img:hover {
 }
 
 @media (max-width: 700px) {
-  .shy-logo {
+  nav .link {
+    margin-right: 4px;
+  }
+  nav .link ul {
+    margin: 0 6px;
+  }
+  nav .shy-logo {
     padding: 5px;
   }
-  .shy-logo img {
+  nav .shy-logo img {
     border-radius: 5px;
     width: 30px;
   }
-  .main {
+  .main-home {
     height: 80vh;
   }
-  .main .heading-img {
+  .main-home .heading-img {
     padding: 80px 0;
   }
-  .main .heading-img img {
+  .main-home .heading-img img {
     width: 100%;
   }
-  .main .credit p {
+  .main-home .credit p {
     letter-spacing: 1px;
     font-size: small;
   }
-  .main .credit p span {
+  .main-home .credit p span {
     font-size: smaller;
+  }
+  .main-info {
+    padding: 4px;
+  }
+  .main-info .poster img {
+    border-radius: 10px;
+    width: 80%;
+    padding: 4px;
+  }
+  .main-info .plot {
+    letter-spacing: 1px;
+  }
+  .main-info .plot p {
+    text-align: justify;
+    font-size: 1.5em;
+  }
+  .main-info .plot span {
+    margin: 0 auto;
+    font-size: 1.5em;
   }
 }
 
@@ -322,21 +348,41 @@ nav .shy-logo img:hover {
     border-radius: 5px;
     width: 30px;
   }
-  .main {
+  .main-home {
     height: 80vh;
   }
-  .main .heading-img {
+  .main-home .heading-img {
     padding: 80px 0;
   }
-  .main .heading-img img {
+  .main-home .heading-img img {
     width: 80%;
   }
-  .main .credit p {
+  .main-home .credit p {
     letter-spacing: 2px;
     font-size: medium;
   }
-  .main .credit p span {
+  .main-home .credit p span {
     font-size: small;
+  }
+  .main-info {
+    padding: 4px;
+  }
+  .main-info .poster img {
+    border-radius: 10px;
+    width: 80%;
+    padding: 4px;
+  }
+  .main-info .plot {
+    letter-spacing: 1px;
+  }
+  .main-info .plot p {
+    text-align: justify;
+    font-size: 2em;
+  }
+  .main-info .plot span {
+    margin: 0 auto;
+    font-size: 2em;
+    letter-spacing: 0px;
   }
 }
 /*# sourceMappingURL=style.css.map */
