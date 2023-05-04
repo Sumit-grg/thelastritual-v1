@@ -59,24 +59,21 @@ nav .link ul:hover {
   cursor: pointer;
 }
 
-nav .shy-logo {
-  padding: 10px;
+.shy-logo {
+  padding: 4px;
   -webkit-animation: fadeIn 2s ease-in;
           animation: fadeIn 2s ease-in;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-nav .shy-logo img {
-  border-radius: 10px;
-  width: 50px;
-  opacity: 0.7;
+.shy-logo img {
+  border-radius: 5px;
+  width: 40px;
+  opacity: 0.8;
   -webkit-filter: sepia(0.6);
           filter: sepia(0.6);
-}
-
-nav .shy-logo img:hover {
-  opacity: 1;
-  -webkit-filter: sepia(0);
-          filter: sepia(0);
 }
 
 .main-home {
@@ -90,11 +87,12 @@ nav .shy-logo img:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 80vh;
+  height: 100vh;
 }
 
 .main-home .heading-img {
   text-align: center;
+  margin-top: 40px;
 }
 
 .main-home .heading-img img {
@@ -125,6 +123,7 @@ nav .shy-logo img:hover {
 }
 
 .main-home .heading-img p {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   color: white;
   letter-spacing: 4px;
   font-size: 3em;
@@ -158,6 +157,7 @@ nav .shy-logo img:hover {
 
 .main-home .heading-img p span {
   color: #841c1c;
+  text-shadow: none;
 }
 
 .main-home .credit {
@@ -184,6 +184,7 @@ nav .shy-logo img:hover {
   display: -ms-flexbox;
   display: flex;
   margin-top: 20px;
+  margin-bottom: 10px;
   height: 35px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -199,6 +200,126 @@ nav .shy-logo img:hover {
 
 .main-home .credit .sponsor img:first-child {
   background-color: #8a8484;
+}
+
+.second-section {
+  background: rgba(248, 247, 247, 0.7);
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  margin: 20px 0;
+  text-align: center;
+}
+
+.second-section #youtube h1 {
+  letter-spacing: 4px;
+  margin: 40px 0;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.second-section #youtube iframe {
+  margin-bottom: 80px;
+  border-radius: 5px;
+  width: 60%;
+  height: 60%;
+}
+
+.overview {
+  background: rgba(248, 247, 247, 0.7);
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  margin-top: 500px;
+}
+
+.overview .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.overview .container #plot-cast {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50vw;
+}
+
+.overview .container #plot-cast #plot {
+  margin: 20px auto;
+  width: 90%;
+}
+
+.overview .container #plot-cast #plot h1 {
+  letter-spacing: 4px;
+  margin: 20px auto;
+  text-align: center;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.overview .container #plot-cast #plot p {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  letter-spacing: 2px;
+  text-align: justify;
+  font-size: 2em;
+}
+
+.overview .container #plot-cast #cast {
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.overview .container #plot-cast #cast .crew-list {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.overview .container #plot-cast #cast .crew-list div {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  letter-spacing: 2px;
+}
+
+.overview .container #plot-cast #cast .crew-list div span {
+  font-size: 2em;
+  color: #626161;
+}
+
+.overview .container #plot-cast #cast .crew-list div p {
+  padding: 5px;
+  font-size: 1.5em;
+}
+
+.overview .container #movieposter {
+  margin: 40px 0;
+  text-align: center;
+  width: 50vw;
+}
+
+.overview .container #movieposter img {
+  width: 90%;
 }
 
 .main-info {
@@ -262,17 +383,34 @@ nav .shy-logo img:hover {
 }
 
 .footer {
-  width: 100vw;
-  position: fixed;
-  bottom: 0;
-  padding: 5px;
+  padding: 10px;
+  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer p {
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   color: #d4d4d4;
-  text-align: center;
-  font-size: small;
+  font-size: 15px;
+  margin: 0 20px;
+}
+
+.footer p a {
+  margin: 0 6px;
+  color: white;
+}
+
+.footer img {
+  width: 40px;
+  margin: 0 6px;
 }
 
 @media (max-width: 700px) {
