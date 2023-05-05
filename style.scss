@@ -220,6 +220,8 @@ nav {
     margin-top: 500px;
     .container {
       display: flex;
+      align-items: center;
+      // flex-direction: column-reverse;
       // border: 2px dotted red;
       #plot-cast{
         // border: 2px solid blue;
@@ -228,7 +230,7 @@ nav {
         width: 50vw;
         #plot{
           margin: 20px auto;
-          width: 90%;
+          width: 80%;
           h1 {
             letter-spacing: 4px;
             margin: 20px auto;
@@ -247,6 +249,7 @@ nav {
         #cast {
           margin: 20px auto;
           display: flex;
+          // border: 2px dotted red;
           .crew-list {
             margin-top: 20px;
             display: flex;
@@ -278,7 +281,7 @@ nav {
         width: 50vw;
         // border: 2px solid green;
         img {
-          width: 90%;
+          width: 80%;
           
         }
       }
@@ -381,108 +384,465 @@ nav {
 }
 
 @media (max-width: 700px) {
-  nav {
-    .link{
-      margin-right: 4px;
-      ul {
-        margin: 0 6px;
-      }
+.main-home {
+  .heading-img {
+    margin-top: 100px;
+    img{
+      width: 90%;
     }
-    .shy-logo {
-      padding: 5px;
-      img {
-        border-radius: 5px;
-        width: 30px;
+    p{
+      font-size: 2em;
+    }
+  }
+
+  .credit {
+    p{
+      letter-spacing: 2px;
+      font-size: medium;
+    }
+    .sponsor {
+      height: 20px;
+      img{
+        height: 90%;
       }
     }
   }
-  .main-home{
-    height: 80vh;
-    .heading-img {
-      padding: 80px 0;
-      img{
-        width: 100%;
+
+}
+
+.second-section {
+  @include background-glass;
+  margin: 20px 0;
+  text-align: center;
+  #youtube {
+    h1{
+      letter-spacing: 4px;
+      margin: 40px 0;
+      color: white;
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+    iframe {
+      margin-bottom: 80px;
+      border-radius: 5px;
+      width: 80%;
+      height: 20%; 
+    }
+  }
+}
+
+  .overview {
+    margin-top: 400px;
+    .container {
+      display: flex;
+      flex-direction: column-reverse;
+      #plot-cast{
+        width: 99vw;
+        #plot{
+          h1 {
+            letter-spacing: 2px;
+          }
+          p{
+            letter-spacing: 1px;
+            font-size: 1.5em;
+          }
+        }
+        #cast {
+          margin: 10px auto;
+          .crew-list {
+            margin-top: 10px;  
+            width: 80vw;         
+            div {
+              text-align: center;
+              padding: 5px;
+              margin: 5px;
+              letter-spacing: 1px;
+              span{
+                font-size: 1.5em;
+              }
+              p {
+                padding: 1px;
+              }
+            }
+          }
+        }
+      }
+      #movieposter{
+        margin: 20px 0;
+        width: 99vw;
       }
     }
+  }
+
+.footer {
+  padding: 5px;
+  p {
+    font-size: 15px;
+    margin: 0 10px;   
+  }
+  img{
+    width: 35px;
+    margin: 0 6px;
+  }
+}
+  // nav {
+  //   .link{
+  //     margin-right: 4px;
+  //     ul {
+  //       margin: 0 6px;
+  //     }
+  //   }
+  //   .shy-logo {
+  //     padding: 5px;
+  //     img {
+  //       border-radius: 5px;
+  //       width: 30px;
+  //     }
+  //   }
+  // }
+  // .main-home{
+  //   height: 80vh;
+  //   .heading-img {
+  //     padding: 80px 0;
+  //     img{
+  //       width: 100%;
+  //     }
+  //   }
+  //   .credit {
+  //     p{
+  //       letter-spacing: 1px;
+  //       font-size: small;
+  //       span{
+  //         font-size: smaller;
+  //       }
+  //     }
+  //   }
+  // }
+  // .main-info {
+  //   padding: 4px;
+  //   .poster {
+  //     img {
+  //       border-radius: 10px;
+  //       width: 80%;
+  //       padding: 4px;
+  //     }
+  //   }
+  //   .plot {
+  //     letter-spacing: 1px;
+  //     p{
+  //       text-align: justify;
+  //       font-size: 1.5em;
+  //     }
+  //     span{
+  //       margin: 0 auto;
+  //       font-size: 1.5em;
+  //     }
+  //   }
+  // }
+}
+
+@media (max-width: 1000px) and (min-width: 700px) {
+  .main-home {
+    .heading-img {
+      margin-top: 100px;
+      img{
+        width: 90%;
+      }
+      p{
+        font-size: 2em;
+      }
+    }
+  
     .credit {
       p{
-        letter-spacing: 1px;
-        font-size: small;
-        span{
-          font-size: smaller;
+        letter-spacing: 2px;
+        font-size: medium;
+      }
+      .sponsor {
+        height: 20px;
+        img{
+          height: 90%;
         }
       }
     }
+  
   }
-  .main-info {
-    padding: 4px;
-    .poster {
-      img {
-        border-radius: 10px;
-        width: 80%;
-        padding: 4px;
+  
+  .second-section {
+    @include background-glass;
+    margin: 20px 0;
+    text-align: center;
+    #youtube {
+      h1{
+        letter-spacing: 4px;
+        margin: 40px 0;
+        color: white;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+      }
+      iframe {
+        margin-bottom: 80px;
+        border-radius: 5px;
+        width: 90%;
+        height: 40%; 
       }
     }
-    .plot {
-      letter-spacing: 1px;
-      p{
-        text-align: justify;
-        font-size: 1.5em;
+  }
+  
+    .overview {
+      margin-top: 400px;
+      .container {
+        display: flex;
+        flex-direction: column-reverse;
+        #plot-cast{
+          width: 99vw;
+          #plot{
+            h1 {
+              letter-spacing: 2px;
+            }
+            p{
+              letter-spacing: 1px;
+              font-size: 1.5em;
+            }
+          }
+          #cast {
+            margin: 10px auto;
+            .crew-list {
+              margin-top: 10px;
+              width: 80vw;           
+              div {
+                text-align: center;
+                padding: 5px;
+                margin: 5px;
+                letter-spacing: 1px;
+                span{
+                  font-size: 1.5em;
+                }
+                p {
+                  padding: 1px;
+                }
+              }
+            }
+          }
+        }
+        #movieposter{
+          margin: 20px 0;
+          width: 99vw;
+        }
       }
-      span{
-        margin: 0 auto;
-        font-size: 1.5em;
+    }
+  
+  .footer {
+    padding: 5px;
+    p {
+      font-size: 15px;
+      margin: 0 10px;   
+    }
+    img{
+      width: 35px;
+      margin: 0 6px;
+    }
+  }
+  //   .shy-logo {
+  //     padding: 5px;
+  //     img {
+  //       border-radius: 5px;
+  //       width: 30px;
+  //     }
+  //   }
+  // .main-home{
+  //   height: 80vh;
+  //   .heading-img {
+  //     padding: 80px 0;
+  //     img{
+  //       width: 80%;
+  //     }
+  //   }
+  //   .credit {
+  //     p{
+  //       letter-spacing: 2px;
+  //       font-size: medium;
+  //       span{
+  //         font-size: small;
+  //       }
+  //     }
+  //   }
+  // }
+  // .main-info {
+  //   padding: 4px;
+  //   .poster {
+  //     img {
+  //       border-radius: 10px;
+  //       width: 80%;
+  //       padding: 4px;
+  //     }
+  //   }
+  //   .plot {
+  //     letter-spacing: 1px;
+  //     p{
+  //       text-align: justify;
+  //       font-size: 2em;
+  //     }
+  //     span{
+  //       margin: 0 auto;
+  //       font-size: 2em;
+  //       letter-spacing: 0px;
+  //     }
+  //   }
+  // }
+}
+
+@media (max-width: 1380px) and (min-width: 1000px) {
+  .second-section {
+    #youtube {
+      iframe {
+        width: 70%;
+        height: 40%; 
+      }
+    }
+  }
+  .overview {
+    margin-top: 400px;
+    .container {
+      display: flex;
+      flex-direction: column-reverse;
+      #plot-cast{
+        width: 99vw;
+        #plot{
+          h1 {
+            letter-spacing: 2px;
+          }
+          p{
+            letter-spacing: 1px;
+            font-size: 1.5em;
+          }
+        }
+        #cast {
+          margin: 10px auto;
+          .crew-list {
+            margin-top: 10px;   
+            width: 80vw;        
+            div {
+              text-align: center;
+              padding: 5px;
+              margin: 5px;
+              letter-spacing: 1px;
+              span{
+                font-size: 1.5em;
+              }
+              p {
+                padding: 1px;
+              }
+            }
+          }
+        }
+      }
+      #movieposter{
+        margin: 20px 0;
+        width: 99vw;
       }
     }
   }
 }
 
-@media (max-width: 1000px) and (min-width: 700px) {
-    .shy-logo {
-      padding: 5px;
-      img {
-        border-radius: 5px;
-        width: 30px;
+// .overview {
+//   .container {
+//     #plot-cast{
+//       #plot{
+//         margin: 20px auto;
+//         width: 80%;
+//         h1 {
+//           letter-spacing: 2px;
+//         }
+//         p{
+//           font-size: 1.5em;
+//         }
+//       }
+//       #cast {
+//         margin: 10px auto;
+//         display: flex;
+//         // border: 2px dotted red;
+//         .crew-list {
+//           margin-top: 10px;
+//           div {
+//             padding: 5px;
+//             margin: 5px;
+//             letter-spacing: 1px;
+//             span{
+//               font-size: 1.5em;
+//             }
+//             p {
+//               padding: 2px;
+//             }
+//           }
+//         }
+//       }
+//     }
+//     #movieposter{
+//       margin: 40px 0;
+//       text-align: center;
+//       width: 50vw;
+//       // border: 2px solid green;
+//       img {
+//         width: 100%;
+        
+//       }
+//     }
+//   }
+// }
+
+@media (max-width: 1800px) and (min-width: 1380px) {
+  .second-section {
+    #youtube {
+      iframe {
+        width: 70%;
+        height: 50%; 
       }
     }
-  .main-home{
-    height: 80vh;
-    .heading-img {
-      padding: 80px 0;
-      img{
+  }
+  .overview {
+  .container {
+    align-items: center;
+    #plot-cast{
+      #plot{
+        margin: 20px auto;
         width: 80%;
+        h1 {
+          letter-spacing: 2px;
+        }
+        p{
+          font-size: 1.5em;
+        }
       }
-    }
-    .credit {
-      p{
-        letter-spacing: 2px;
-        font-size: medium;
-        span{
-          font-size: small;
+      #cast {
+        margin: 10px auto;
+        display: flex;
+        // border: 2px dotted red;
+        .crew-list {
+          margin-top: 10px;
+          div {
+            padding: 5px;
+            margin: 5px;
+            letter-spacing: 1px;
+            span{
+              font-size: 1.5em;
+            }
+            p {
+              padding: 2px;
+              font-size: 1.5em;
+            }
+          }
         }
       }
     }
-  }
-  .main-info {
-    padding: 4px;
-    .poster {
+    #movieposter{
+      margin: 40px 0;
+      text-align: center;
+      width: 50vw;
+      // border: 2px solid green;
       img {
-        border-radius: 10px;
         width: 80%;
-        padding: 4px;
-      }
-    }
-    .plot {
-      letter-spacing: 1px;
-      p{
-        text-align: justify;
-        font-size: 2em;
-      }
-      span{
-        margin: 0 auto;
-        font-size: 2em;
-        letter-spacing: 0px;
+        
       }
     }
   }
+}
 }

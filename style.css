@@ -241,6 +241,9 @@ nav .link ul:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .overview .container #plot-cast {
@@ -256,7 +259,7 @@ nav .link ul:hover {
 
 .overview .container #plot-cast #plot {
   margin: 20px auto;
-  width: 90%;
+  width: 80%;
 }
 
 .overview .container #plot-cast #plot h1 {
@@ -319,7 +322,7 @@ nav .link ul:hover {
 }
 
 .overview .container #movieposter img {
-  width: 90%;
+  width: 80%;
 }
 
 .main-info {
@@ -414,99 +417,305 @@ nav .link ul:hover {
 }
 
 @media (max-width: 700px) {
-  nav .link {
-    margin-right: 4px;
-  }
-  nav .link ul {
-    margin: 0 6px;
-  }
-  nav .shy-logo {
-    padding: 5px;
-  }
-  nav .shy-logo img {
-    border-radius: 5px;
-    width: 30px;
-  }
-  .main-home {
-    height: 80vh;
-  }
   .main-home .heading-img {
-    padding: 80px 0;
+    margin-top: 100px;
   }
   .main-home .heading-img img {
-    width: 100%;
+    width: 90%;
   }
-  .main-home .credit p {
-    letter-spacing: 1px;
-    font-size: small;
-  }
-  .main-home .credit p span {
-    font-size: smaller;
-  }
-  .main-info {
-    padding: 4px;
-  }
-  .main-info .poster img {
-    border-radius: 10px;
-    width: 80%;
-    padding: 4px;
-  }
-  .main-info .plot {
-    letter-spacing: 1px;
-  }
-  .main-info .plot p {
-    text-align: justify;
-    font-size: 1.5em;
-  }
-  .main-info .plot span {
-    margin: 0 auto;
-    font-size: 1.5em;
-  }
-}
-
-@media (max-width: 1000px) and (min-width: 700px) {
-  .shy-logo {
-    padding: 5px;
-  }
-  .shy-logo img {
-    border-radius: 5px;
-    width: 30px;
-  }
-  .main-home {
-    height: 80vh;
-  }
-  .main-home .heading-img {
-    padding: 80px 0;
-  }
-  .main-home .heading-img img {
-    width: 80%;
+  .main-home .heading-img p {
+    font-size: 2em;
   }
   .main-home .credit p {
     letter-spacing: 2px;
     font-size: medium;
   }
-  .main-home .credit p span {
-    font-size: small;
+  .main-home .credit .sponsor {
+    height: 20px;
   }
-  .main-info {
-    padding: 4px;
+  .main-home .credit .sponsor img {
+    height: 90%;
   }
-  .main-info .poster img {
-    border-radius: 10px;
+  .second-section {
+    background: rgba(248, 247, 247, 0.7);
+    -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    margin: 20px 0;
+    text-align: center;
+  }
+  .second-section #youtube h1 {
+    letter-spacing: 4px;
+    margin: 40px 0;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+  .second-section #youtube iframe {
+    margin-bottom: 80px;
+    border-radius: 5px;
     width: 80%;
-    padding: 4px;
+    height: 20%;
   }
-  .main-info .plot {
+  .overview {
+    margin-top: 400px;
+  }
+  .overview .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .overview .container #plot-cast {
+    width: 99vw;
+  }
+  .overview .container #plot-cast #plot h1 {
+    letter-spacing: 2px;
+  }
+  .overview .container #plot-cast #plot p {
+    letter-spacing: 1px;
+    font-size: 1.5em;
+  }
+  .overview .container #plot-cast #cast {
+    margin: 10px auto;
+  }
+  .overview .container #plot-cast #cast .crew-list {
+    margin-top: 10px;
+    width: 80vw;
+  }
+  .overview .container #plot-cast #cast .crew-list div {
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
     letter-spacing: 1px;
   }
-  .main-info .plot p {
-    text-align: justify;
+  .overview .container #plot-cast #cast .crew-list div span {
+    font-size: 1.5em;
+  }
+  .overview .container #plot-cast #cast .crew-list div p {
+    padding: 1px;
+  }
+  .overview .container #movieposter {
+    margin: 20px 0;
+    width: 99vw;
+  }
+  .footer {
+    padding: 5px;
+  }
+  .footer p {
+    font-size: 15px;
+    margin: 0 10px;
+  }
+  .footer img {
+    width: 35px;
+    margin: 0 6px;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 700px) {
+  .main-home .heading-img {
+    margin-top: 100px;
+  }
+  .main-home .heading-img img {
+    width: 90%;
+  }
+  .main-home .heading-img p {
     font-size: 2em;
   }
-  .main-info .plot span {
-    margin: 0 auto;
-    font-size: 2em;
-    letter-spacing: 0px;
+  .main-home .credit p {
+    letter-spacing: 2px;
+    font-size: medium;
+  }
+  .main-home .credit .sponsor {
+    height: 20px;
+  }
+  .main-home .credit .sponsor img {
+    height: 90%;
+  }
+  .second-section {
+    background: rgba(248, 247, 247, 0.7);
+    -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    margin: 20px 0;
+    text-align: center;
+  }
+  .second-section #youtube h1 {
+    letter-spacing: 4px;
+    margin: 40px 0;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+  .second-section #youtube iframe {
+    margin-bottom: 80px;
+    border-radius: 5px;
+    width: 90%;
+    height: 40%;
+  }
+  .overview {
+    margin-top: 400px;
+  }
+  .overview .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .overview .container #plot-cast {
+    width: 99vw;
+  }
+  .overview .container #plot-cast #plot h1 {
+    letter-spacing: 2px;
+  }
+  .overview .container #plot-cast #plot p {
+    letter-spacing: 1px;
+    font-size: 1.5em;
+  }
+  .overview .container #plot-cast #cast {
+    margin: 10px auto;
+  }
+  .overview .container #plot-cast #cast .crew-list {
+    margin-top: 10px;
+    width: 80vw;
+  }
+  .overview .container #plot-cast #cast .crew-list div {
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    letter-spacing: 1px;
+  }
+  .overview .container #plot-cast #cast .crew-list div span {
+    font-size: 1.5em;
+  }
+  .overview .container #plot-cast #cast .crew-list div p {
+    padding: 1px;
+  }
+  .overview .container #movieposter {
+    margin: 20px 0;
+    width: 99vw;
+  }
+  .footer {
+    padding: 5px;
+  }
+  .footer p {
+    font-size: 15px;
+    margin: 0 10px;
+  }
+  .footer img {
+    width: 35px;
+    margin: 0 6px;
+  }
+}
+
+@media (max-width: 1380px) and (min-width: 1000px) {
+  .second-section #youtube iframe {
+    width: 70%;
+    height: 40%;
+  }
+  .overview {
+    margin-top: 400px;
+  }
+  .overview .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .overview .container #plot-cast {
+    width: 99vw;
+  }
+  .overview .container #plot-cast #plot h1 {
+    letter-spacing: 2px;
+  }
+  .overview .container #plot-cast #plot p {
+    letter-spacing: 1px;
+    font-size: 1.5em;
+  }
+  .overview .container #plot-cast #cast {
+    margin: 10px auto;
+  }
+  .overview .container #plot-cast #cast .crew-list {
+    margin-top: 10px;
+    width: 80vw;
+  }
+  .overview .container #plot-cast #cast .crew-list div {
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    letter-spacing: 1px;
+  }
+  .overview .container #plot-cast #cast .crew-list div span {
+    font-size: 1.5em;
+  }
+  .overview .container #plot-cast #cast .crew-list div p {
+    padding: 1px;
+  }
+  .overview .container #movieposter {
+    margin: 20px 0;
+    width: 99vw;
+  }
+}
+
+@media (max-width: 1800px) and (min-width: 1380px) {
+  .second-section #youtube iframe {
+    width: 70%;
+    height: 50%;
+  }
+  .overview .container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .overview .container #plot-cast #plot {
+    margin: 20px auto;
+    width: 80%;
+  }
+  .overview .container #plot-cast #plot h1 {
+    letter-spacing: 2px;
+  }
+  .overview .container #plot-cast #plot p {
+    font-size: 1.5em;
+  }
+  .overview .container #plot-cast #cast {
+    margin: 10px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .overview .container #plot-cast #cast .crew-list {
+    margin-top: 10px;
+  }
+  .overview .container #plot-cast #cast .crew-list div {
+    padding: 5px;
+    margin: 5px;
+    letter-spacing: 1px;
+  }
+  .overview .container #plot-cast #cast .crew-list div span {
+    font-size: 1.5em;
+  }
+  .overview .container #plot-cast #cast .crew-list div p {
+    padding: 2px;
+    font-size: 1.5em;
+  }
+  .overview .container #movieposter {
+    margin: 40px 0;
+    text-align: center;
+    width: 50vw;
+  }
+  .overview .container #movieposter img {
+    width: 80%;
   }
 }
 /*# sourceMappingURL=style.css.map */
