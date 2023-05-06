@@ -87,7 +87,7 @@ nav .link ul:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 95vh;
+  height: 94vh;
 }
 
 .main-home .heading-img {
