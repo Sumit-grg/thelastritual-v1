@@ -87,7 +87,7 @@ nav .link ul:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 100vh;
+  height: 95vh;
 }
 
 .main-home .heading-img {
@@ -177,6 +177,38 @@ nav .link ul:hover {
   font-size: medium;
   font-weight: bold;
   color: #626161;
+}
+
+@-webkit-keyframes Scaler3 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes Scaler3 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 .main-home .credit .sponsor {
