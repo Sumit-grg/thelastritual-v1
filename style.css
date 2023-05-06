@@ -203,13 +203,7 @@ nav .link ul:hover {
 }
 
 .second-section {
-  background: rgba(248, 247, 247, 0.7);
-  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-  border: 1px solid rgba(255, 255, 255, 0.03);
-  margin: 20px 0;
+  margin: 100px 0;
   text-align: center;
 }
 
@@ -222,19 +216,15 @@ nav .link ul:hover {
 
 .second-section #youtube iframe {
   margin-bottom: 80px;
-  border-radius: 5px;
+  border-radius: 10px;
   width: 60%;
   height: 60%;
+  -webkit-box-shadow: 3px 4px 25px -4px rgba(0, 0, 0, 0.79);
+  box-shadow: 3px 4px 25px -4px rgba(0, 0, 0, 0.79);
 }
 
 .overview {
-  background: rgba(248, 247, 247, 0.7);
-  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-  border: 1px solid rgba(255, 255, 255, 0.03);
-  margin-top: 500px;
+  margin-top: 50px;
 }
 
 .overview .container {
@@ -278,6 +268,22 @@ nav .link ul:hover {
   font-size: 2em;
 }
 
+.overview .container #plot-cast #plot #late-info p {
+  text-align: center;
+  margin: 6px auto;
+  font-size: 2em;
+}
+
+.overview .container #plot-cast #plot #late-info p span {
+  font-size: 0.9em;
+  color: #626161;
+}
+
+.overview .container #plot-cast #plot #late-info #title-name {
+  margin-top: 10px;
+  font-size: 3.5em;
+}
+
 .overview .container #plot-cast #cast {
   margin: 20px auto;
   display: -webkit-box;
@@ -315,6 +321,14 @@ nav .link ul:hover {
   font-size: 1.5em;
 }
 
+.overview .container #plot-cast #cast .crew-list #cast-list div {
+  margin-top: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
 .overview .container #movieposter {
   margin: 40px 0;
   text-align: center;
@@ -322,7 +336,10 @@ nav .link ul:hover {
 }
 
 .overview .container #movieposter img {
+  border-radius: 10px;
   width: 80%;
+  -webkit-box-shadow: 3px 4px 25px -4px rgba(0, 0, 0, 0.79);
+  box-shadow: 3px 4px 25px -4px rgba(0, 0, 0, 0.79);
 }
 
 .main-info {
@@ -411,6 +428,18 @@ nav .link ul:hover {
   color: white;
 }
 
+.footer p a:hover {
+  cursor: pointer;
+}
+
+.footer p #insta:hover {
+  color: #905605;
+}
+
+.footer p #utube:hover {
+  color: #FF0000;
+}
+
 .footer img {
   width: 40px;
   margin: 0 6px;
@@ -437,13 +466,7 @@ nav .link ul:hover {
     height: 90%;
   }
   .second-section {
-    background: rgba(248, 247, 247, 0.7);
-    -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    border: 1px solid rgba(255, 255, 255, 0.03);
-    margin: 20px 0;
+    margin: 80px 0;
     text-align: center;
   }
   .second-section #youtube h1 {
@@ -459,7 +482,7 @@ nav .link ul:hover {
     height: 20%;
   }
   .overview {
-    margin-top: 400px;
+    margin-top: 50px;
   }
   .overview .container {
     display: -webkit-box;
@@ -537,13 +560,7 @@ nav .link ul:hover {
     height: 90%;
   }
   .second-section {
-    background: rgba(248, 247, 247, 0.7);
-    -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    border: 1px solid rgba(255, 255, 255, 0.03);
-    margin: 20px 0;
+    margin: 100px 0;
     text-align: center;
   }
   .second-section #youtube h1 {
@@ -559,7 +576,7 @@ nav .link ul:hover {
     height: 40%;
   }
   .overview {
-    margin-top: 400px;
+    margin-top: 50px;
   }
   .overview .container {
     display: -webkit-box;
@@ -616,13 +633,13 @@ nav .link ul:hover {
   }
 }
 
-@media (max-width: 1380px) and (min-width: 1000px) {
+@media (max-width: 1400px) and (min-width: 1000px) {
   .second-section #youtube iframe {
     width: 70%;
     height: 40%;
   }
   .overview {
-    margin-top: 400px;
+    margin-top: 50px;
   }
   .overview .container {
     display: -webkit-box;
@@ -668,7 +685,7 @@ nav .link ul:hover {
   }
 }
 
-@media (max-width: 1800px) and (min-width: 1380px) {
+@media (max-width: 1800px) and (min-width: 1400px) {
   .second-section #youtube iframe {
     width: 70%;
     height: 50%;
@@ -679,7 +696,6 @@ nav .link ul:hover {
             align-items: center;
   }
   .overview .container #plot-cast #plot {
-    margin: 20px auto;
     width: 80%;
   }
   .overview .container #plot-cast #plot h1 {
@@ -689,13 +705,9 @@ nav .link ul:hover {
     font-size: 1.5em;
   }
   .overview .container #plot-cast #cast {
-    margin: 10px auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-  .overview .container #plot-cast #cast .crew-list {
-    margin-top: 10px;
   }
   .overview .container #plot-cast #cast .crew-list div {
     padding: 5px;
@@ -710,7 +722,51 @@ nav .link ul:hover {
     font-size: 1.5em;
   }
   .overview .container #movieposter {
-    margin: 40px 0;
+    text-align: center;
+    width: 50vw;
+  }
+  .overview .container #movieposter img {
+    width: 90%;
+  }
+}
+
+@media (max-width: 2226px) and (min-width: 1800px) {
+  .second-section #youtube iframe {
+    width: 70%;
+    height: 50%;
+  }
+  .overview .container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .overview .container #plot-cast #plot {
+    width: 80%;
+  }
+  .overview .container #plot-cast #plot h1 {
+    letter-spacing: 2px;
+  }
+  .overview .container #plot-cast #plot p {
+    font-size: 1.5em;
+  }
+  .overview .container #plot-cast #cast {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .overview .container #plot-cast #cast .crew-list div {
+    padding: 5px;
+    margin: 5px;
+    letter-spacing: 1px;
+  }
+  .overview .container #plot-cast #cast .crew-list div span {
+    font-size: 1.5em;
+  }
+  .overview .container #plot-cast #cast .crew-list div p {
+    padding: 2px;
+    font-size: 1.5em;
+  }
+  .overview .container #movieposter {
     text-align: center;
     width: 50vw;
   }

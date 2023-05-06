@@ -196,8 +196,8 @@ nav {
 }
 
 .second-section {
-  @include background-glass;
-  margin: 20px 0;
+  // @include background-glass;
+  margin: 100px 0;
   text-align: center;
   #youtube {
     h1{
@@ -208,16 +208,19 @@ nav {
     }
     iframe {
       margin-bottom: 80px;
-      border-radius: 5px;
+      border-radius: 10px;
       width: 60%;
       height: 60%; 
+      -webkit-box-shadow: 3px 4px 25px -4px rgba(0,0,0,0.79);
+      -moz-box-shadow: 3px 4px 25px -4px rgba(0,0,0,0.79);
+      box-shadow: 3px 4px 25px -4px rgba(0,0,0,0.79);
     }
   }
 }
 
   .overview {
-    @include background-glass;
-    margin-top: 500px;
+    // @include background-glass;
+    margin-top: 50px;
     .container {
       display: flex;
       align-items: center;
@@ -244,6 +247,21 @@ nav {
             letter-spacing: 2px;
             text-align: justify;
             font-size: 2em;
+          }
+          #late-info{
+            p{
+              text-align: center;
+              margin: 6px auto;
+              font-size: 2em;
+              span {
+                font-size: 0.9em;
+                color: rgb(98, 97, 97);
+              }
+            }
+            #title-name {
+              margin-top: 10px;
+              font-size: 3.5em;
+            }
           }
         }
         #cast {
@@ -272,6 +290,14 @@ nav {
                 font-size: 1.5em;
               }
             }
+
+            #cast-list {
+              div{
+                margin-top: 0;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+              }
+            }
           }
         }
       }
@@ -281,8 +307,12 @@ nav {
         width: 50vw;
         // border: 2px solid green;
         img {
+          border-radius: 10px;
           width: 80%;
           
+          -webkit-box-shadow: 3px 4px 25px -4px rgba(0,0,0,0.79);
+          -moz-box-shadow: 3px 4px 25px -4px rgba(0,0,0,0.79);
+          box-shadow: 3px 4px 25px -4px rgba(0,0,0,0.79);
         }
       }
     }
@@ -375,7 +405,20 @@ nav {
     a {
       margin: 0 6px;
       color: white;
+      &:hover {
+        cursor: pointer;
+      }
     }    
+    #insta {
+      &:hover {
+        color: #905605;
+      }
+    }
+    #utube {
+      &:hover {
+        color: #FF0000;
+      }
+    }
   }
   img{
     width: 40px;
@@ -407,12 +450,11 @@ nav {
       }
     }
   }
-
 }
 
 .second-section {
-  @include background-glass;
-  margin: 20px 0;
+  // @include background-glass;
+  margin: 80px 0;
   text-align: center;
   #youtube {
     h1{
@@ -431,7 +473,7 @@ nav {
 }
 
   .overview {
-    margin-top: 400px;
+    margin-top: 50px;
     .container {
       display: flex;
       flex-direction: column-reverse;
@@ -568,8 +610,8 @@ nav {
   }
   
   .second-section {
-    @include background-glass;
-    margin: 20px 0;
+    // @include background-glass;
+    margin: 100px 0;
     text-align: center;
     #youtube {
       h1{
@@ -588,7 +630,7 @@ nav {
   }
   
     .overview {
-      margin-top: 400px;
+      margin-top: 50px;
       .container {
         display: flex;
         flex-direction: column-reverse;
@@ -690,7 +732,7 @@ nav {
   // }
 }
 
-@media (max-width: 1380px) and (min-width: 1000px) {
+@media (max-width: 1400px) and (min-width: 1000px) {
   .second-section {
     #youtube {
       iframe {
@@ -700,7 +742,7 @@ nav {
     }
   }
   .overview {
-    margin-top: 400px;
+    margin-top: 50px;
     .container {
       display: flex;
       flex-direction: column-reverse;
@@ -789,7 +831,7 @@ nav {
 //   }
 // }
 
-@media (max-width: 1800px) and (min-width: 1380px) {
+@media (max-width: 1800px) and (min-width: 1400px) {
   .second-section {
     #youtube {
       iframe {
@@ -803,7 +845,7 @@ nav {
     align-items: center;
     #plot-cast{
       #plot{
-        margin: 20px auto;
+        // margin: 20px auto;
         width: 80%;
         h1 {
           letter-spacing: 2px;
@@ -813,11 +855,11 @@ nav {
         }
       }
       #cast {
-        margin: 10px auto;
+        // margin: 10px auto;
         display: flex;
         // border: 2px dotted red;
         .crew-list {
-          margin-top: 10px;
+          // margin-top: 10px;
           div {
             padding: 5px;
             margin: 5px;
@@ -834,7 +876,66 @@ nav {
       }
     }
     #movieposter{
-      margin: 40px 0;
+      // margin: 40px 0;
+      text-align: center;
+      width: 50vw;
+      // border: 2px solid green;
+      img {
+        width: 90%;
+        
+      }
+    }
+  }
+}
+}
+
+
+@media (max-width: 2226px) and (min-width: 1800px) {
+  .second-section {
+    #youtube {
+      iframe {
+        width: 70%;
+        height: 50%; 
+      }
+    }
+  }
+  .overview {
+  .container {
+    align-items: center;
+    #plot-cast{
+      #plot{
+        // margin: 20px auto;
+        width: 80%;
+        h1 {
+          letter-spacing: 2px;
+        }
+        p{
+          font-size: 1.5em;
+        }
+      }
+      #cast {
+        // margin: 10px auto;
+        display: flex;
+        // border: 2px dotted red;
+        .crew-list {
+          // margin-top: 10px;
+          div {
+            padding: 5px;
+            margin: 5px;
+            letter-spacing: 1px;
+            span{
+              font-size: 1.5em;
+            }
+            p {
+              padding: 2px;
+              font-size: 1.5em;
+            }
+          }
+        }
+      }
+    }
+    #movieposter{
+      // margin: 40px 0;
       text-align: center;
       width: 50vw;
       // border: 2px solid green;
