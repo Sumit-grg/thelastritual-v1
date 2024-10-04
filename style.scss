@@ -200,15 +200,25 @@ nav {
       color: white;
       text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     }
-    iframe {
-      margin-bottom: 80px;
-      border-radius: 10px;
-      width: 60%;
-      height: 60%; 
-      -webkit-box-shadow: 3px 4px 25px -4px rgba(0,0,0,0.79);
-      -moz-box-shadow: 3px 4px 25px -4px rgba(0,0,0,0.79);
-      box-shadow: 3px 4px 25px -4px rgba(0,0,0,0.79);
-    }
+
+      .vid-player{
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.26%;
+        margin-bottom: 8px;
+      }
+      #vid-item {
+        border-radius: 4px;
+        position: absolute;
+        left:0;
+        right:0;
+      
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        height: 80%;
+      }
   }
 }
 
@@ -457,12 +467,6 @@ nav {
       color: white;
       text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     }
-    iframe {
-      margin-bottom: 80px;
-      border-radius: 5px;
-      width: 80%;
-      height: 20%; 
-    }
   }
 }
 
@@ -520,60 +524,6 @@ nav {
     margin: 0 6px;
   }
 }
-  // nav {
-  //   .link{
-  //     margin-right: 4px;
-  //     ul {
-  //       margin: 0 6px;
-  //     }
-  //   }
-  //   .shy-logo {
-  //     padding: 5px;
-  //     img {
-  //       border-radius: 5px;
-  //       width: 30px;
-  //     }
-  //   }
-  // }
-  // .main-home{
-  //   height: 80vh;
-  //   .heading-img {
-  //     padding: 80px 0;
-  //     img{
-  //       width: 100%;
-  //     }
-  //   }
-  //   .credit {
-  //     p{
-  //       letter-spacing: 1px;
-  //       font-size: small;
-  //       span{
-  //         font-size: smaller;
-  //       }
-  //     }
-  //   }
-  // }
-  // .main-info {
-  //   padding: 4px;
-  //   .poster {
-  //     img {
-  //       border-radius: 10px;
-  //       width: 80%;
-  //       padding: 4px;
-  //     }
-  //   }
-  //   .plot {
-  //     letter-spacing: 1px;
-  //     p{
-  //       text-align: justify;
-  //       font-size: 1.5em;
-  //     }
-  //     span{
-  //       margin: 0 auto;
-  //       font-size: 1.5em;
-  //     }
-  //   }
-  // }
 }
 
 @media (max-width: 1000px) and (min-width: 700px) {
@@ -614,12 +564,7 @@ nav {
         color: white;
         text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
       }
-      iframe {
-        margin-bottom: 80px;
-        border-radius: 5px;
-        width: 90%;
-        height: 40%; 
-      }
+
     }
   }
   
@@ -677,62 +622,12 @@ nav {
       margin: 0 6px;
     }
   }
-  //   .shy-logo {
-  //     padding: 5px;
-  //     img {
-  //       border-radius: 5px;
-  //       width: 30px;
-  //     }
-  //   }
-  // .main-home{
-  //   height: 80vh;
-  //   .heading-img {
-  //     padding: 80px 0;
-  //     img{
-  //       width: 80%;
-  //     }
-  //   }
-  //   .credit {
-  //     p{
-  //       letter-spacing: 2px;
-  //       font-size: medium;
-  //       span{
-  //         font-size: small;
-  //       }
-  //     }
-  //   }
-  // }
-  // .main-info {
-  //   padding: 4px;
-  //   .poster {
-  //     img {
-  //       border-radius: 10px;
-  //       width: 80%;
-  //       padding: 4px;
-  //     }
-  //   }
-  //   .plot {
-  //     letter-spacing: 1px;
-  //     p{
-  //       text-align: justify;
-  //       font-size: 2em;
-  //     }
-  //     span{
-  //       margin: 0 auto;
-  //       font-size: 2em;
-  //       letter-spacing: 0px;
-  //     }
-  //   }
-  // }
+
 }
 
 @media (max-width: 1400px) and (min-width: 1000px) {
   .second-section {
     #youtube {
-      iframe {
-        width: 70%;
-        height: 40%; 
-      }
     }
   }
   .overview {
@@ -779,60 +674,10 @@ nav {
   }
 }
 
-// .overview {
-//   .container {
-//     #plot-cast{
-//       #plot{
-//         margin: 20px auto;
-//         width: 80%;
-//         h1 {
-//           letter-spacing: 2px;
-//         }
-//         p{
-//           font-size: 1.5em;
-//         }
-//       }
-//       #cast {
-//         margin: 10px auto;
-//         display: flex;
-//         // border: 2px dotted red;
-//         .crew-list {
-//           margin-top: 10px;
-//           div {
-//             padding: 5px;
-//             margin: 5px;
-//             letter-spacing: 1px;
-//             span{
-//               font-size: 1.5em;
-//             }
-//             p {
-//               padding: 2px;
-//             }
-//           }
-//         }
-//       }
-//     }
-//     #movieposter{
-//       margin: 40px 0;
-//       text-align: center;
-//       width: 50vw;
-//       // border: 2px solid green;
-//       img {
-//         width: 100%;
-        
-//       }
-//     }
-//   }
-// }
 
 @media (max-width: 1800px) and (min-width: 1400px) {
   .second-section {
-    #youtube {
-      iframe {
-        width: 70%;
-        height: 50%; 
-      }
-    }
+
   }
   .overview {
   .container {
@@ -886,12 +731,7 @@ nav {
 
 @media (max-width: 2226px) and (min-width: 1800px) {
   .second-section {
-    #youtube {
-      iframe {
-        width: 70%;
-        height: 50%; 
-      }
-    }
+
   }
   .overview {
   .container {
@@ -941,3 +781,13 @@ nav {
   }
 }
 }
+
+@media (max-width: 900px){
+
+  #vid-item {
+    width: 98% !important;
+    height: 98% !important;
+  }
+}
+  
+

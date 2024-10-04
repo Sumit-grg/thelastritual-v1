@@ -2,13 +2,12 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: #1a1a1a;
-  font-family: 'Built Titling';
+  background-color: rgb(26, 26, 26);
+  font-family: "Built Titling";
 }
 
 video {
@@ -18,7 +17,6 @@ video {
   z-index: -999;
   top: 50%;
   left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
   min-width: 100%;
   min-height: 100%;
@@ -29,90 +27,57 @@ video {
 }
 
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
-
 nav .link {
   margin-right: 40px;
 }
-
 nav .link ul {
   display: inline-block;
   margin: 0 20px;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: x-large;
   letter-spacing: 2px;
   padding: 5px;
   border-radius: 5px;
 }
-
 nav .link ul:hover {
   cursor: pointer;
 }
 
 .shy-logo {
   padding: 4px;
-  -webkit-animation: fadeIn 2s ease-in;
-          animation: fadeIn 2s ease-in;
+  animation: fadeIn 2s ease-in;
   position: absolute;
   top: 0;
   left: 0;
 }
-
 .shy-logo img {
   border-radius: 5px;
   width: 40px;
   opacity: 0.8;
-  -webkit-filter: sepia(0.6);
-          filter: sepia(0.6);
+  filter: sepia(0.6);
 }
 
 .main-home {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   height: 94vh;
 }
-
 .main-home .heading-img {
   text-align: center;
   margin-top: 40px;
 }
-
 .main-home .heading-img img {
   width: 60%;
 }
-
 .main-home .heading-img #title1 {
-  -webkit-animation: fadeIn 4s ease-in;
-          animation: fadeIn 4s ease-in;
+  animation: fadeIn 4s ease-in;
 }
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -121,28 +86,13 @@ nav .link ul:hover {
     opacity: 1;
   }
 }
-
 .main-home .heading-img p {
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   color: white;
   letter-spacing: 4px;
   font-size: 3em;
-  -webkit-animation: fadeIn2 3s ease-in;
-          animation: fadeIn2 3s ease-in;
+  animation: fadeIn2 3s ease-in;
 }
-
-@-webkit-keyframes fadeIn2 {
-  0% {
-    opacity: 0;
-  }
-  80% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 @keyframes fadeIn2 {
   0% {
     opacity: 0;
@@ -154,82 +104,51 @@ nav .link ul:hover {
     opacity: 1;
   }
 }
-
 .main-home .heading-img p span {
-  color: #841c1c;
+  color: rgb(132, 28, 28);
   text-shadow: none;
 }
-
 .main-home .credit {
   text-align: center;
   color: white;
-  -webkit-animation: Scaler3 4s ease;
-          animation: Scaler3 4s ease;
+  animation: Scaler3 4s ease;
 }
-
 .main-home .credit p {
   letter-spacing: 4px;
   font-size: large;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
-
 .main-home .credit p span {
   font-size: medium;
   font-weight: bold;
-  color: #626161;
+  color: rgb(98, 97, 97);
 }
-
-@-webkit-keyframes Scaler3 {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
 @keyframes Scaler3 {
   0% {
     opacity: 0;
   }
   50% {
     opacity: 0;
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
+    transform: scale(0.7);
   }
   100% {
     opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
-
 .main-home .credit .sponsor {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 20px;
   margin-bottom: 10px;
   height: 35px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .main-home .credit .sponsor img {
   background-color: aliceblue;
   border-radius: 3px;
   height: 100%;
   margin: 0 10px;
 }
-
 .main-home .credit .sponsor img:first-child {
   background-color: #8a8484;
 }
@@ -238,52 +157,46 @@ nav .link ul:hover {
   margin: 100px 0;
   text-align: center;
 }
-
 .second-section #youtube h1 {
   letter-spacing: 4px;
   margin: 40px 0;
   color: white;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
-
-.second-section #youtube iframe {
-  margin-bottom: 80px;
-  border-radius: 10px;
-  width: 60%;
-  height: 60%;
-  -webkit-box-shadow: 3px 4px 25px -4px rgba(0, 0, 0, 0.79);
-  box-shadow: 3px 4px 25px -4px rgba(0, 0, 0, 0.79);
+.second-section #youtube .vid-player {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.26%;
+  margin-bottom: 8px;
+}
+.second-section #youtube #vid-item {
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 80%;
 }
 
 .overview {
   margin-top: 50px;
 }
-
 .overview .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .overview .container #plot-cast {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 50vw;
 }
-
 .overview .container #plot-cast #plot {
   margin: 20px auto;
   width: 80%;
 }
-
 .overview .container #plot-cast #plot h1 {
   letter-spacing: 4px;
   margin: 20px auto;
@@ -291,7 +204,6 @@ nav .link ul:hover {
   color: white;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
-
 .overview .container #plot-cast #plot p {
   color: white;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
@@ -299,41 +211,29 @@ nav .link ul:hover {
   text-align: justify;
   font-size: 2em;
 }
-
 .overview .container #plot-cast #plot #late-info p {
   text-align: center;
   margin: 6px auto;
   font-size: 2em;
 }
-
 .overview .container #plot-cast #plot #late-info p span {
   font-size: 0.9em;
-  color: #626161;
+  color: rgb(98, 97, 97);
 }
-
 .overview .container #plot-cast #plot #late-info #title-name {
   margin-top: 10px;
   font-size: 3.5em;
 }
-
 .overview .container #plot-cast #cast {
   margin: 20px auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .overview .container #plot-cast #cast .crew-list {
   margin-top: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-
 .overview .container #plot-cast #cast .crew-list div {
   text-align: center;
   padding: 10px;
@@ -342,35 +242,27 @@ nav .link ul:hover {
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   letter-spacing: 2px;
 }
-
 .overview .container #plot-cast #cast .crew-list div span {
   font-size: 2em;
-  color: #626161;
+  color: rgb(98, 97, 97);
 }
-
 .overview .container #plot-cast #cast .crew-list div p {
   padding: 5px;
   font-size: 1.5em;
 }
-
 .overview .container #plot-cast #cast .crew-list #cast-list div {
   margin-top: 0;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
-
 .overview .container #movieposter {
   margin: 40px 0;
   text-align: center;
   width: 50vw;
 }
-
 .overview .container #movieposter img {
   border-radius: 10px;
   width: 80%;
-  -webkit-box-shadow: 3px 4px 25px -4px rgba(0, 0, 0, 0.79);
   box-shadow: 3px 4px 25px -4px rgba(0, 0, 0, 0.79);
 }
 
@@ -379,42 +271,34 @@ nav .link ul:hover {
   text-align: center;
   background: rgba(255, 255, 255, 0.06);
   border-radius: 16px;
-  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
   border: 1px solid rgba(255, 255, 255, 0.03);
   margin: 0 auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 40px;
   width: 90vw;
 }
-
 .main-info .poster {
   margin-top: 10px;
 }
-
 .main-info .poster img {
   border-radius: 16px;
   width: 50%;
   padding: 5px;
 }
-
 .main-info .plot {
   letter-spacing: 2px;
   font-size: large;
   color: white;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
-
 .main-info .plot p {
   padding: 5px;
   margin: 0 auto;
   font-size: 2em;
 }
-
 .main-info .plot span {
   font-weight: bold;
   font-size: 2em;
@@ -423,8 +307,7 @@ nav .link ul:hover {
 .main-cc {
   background: rgba(255, 255, 255, 0.06);
   border-radius: 16px;
-  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
   border: 1px solid rgba(255, 255, 255, 0.03);
@@ -437,41 +320,29 @@ nav .link ul:hover {
 .footer {
   padding: 10px;
   background-color: #000;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-
 .footer p {
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-  color: #d4d4d4;
+  color: rgb(212, 212, 212);
   font-size: 15px;
   margin: 0 20px;
 }
-
 .footer p a {
   margin: 0 6px;
   color: white;
 }
-
 .footer p a:hover {
   cursor: pointer;
 }
-
 .footer p #insta:hover {
   color: #905605;
 }
-
 .footer p #utube:hover {
   color: #FF0000;
 }
-
 .footer img {
   width: 40px;
   margin: 0 6px;
@@ -507,23 +378,12 @@ nav .link ul:hover {
     color: white;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   }
-  .second-section #youtube iframe {
-    margin-bottom: 80px;
-    border-radius: 5px;
-    width: 80%;
-    height: 20%;
-  }
   .overview {
     margin-top: 50px;
   }
   .overview .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
   .overview .container #plot-cast {
     width: 99vw;
@@ -570,7 +430,6 @@ nav .link ul:hover {
     margin: 0 6px;
   }
 }
-
 @media (max-width: 1000px) and (min-width: 700px) {
   .main-home .heading-img {
     margin-top: 100px;
@@ -601,23 +460,12 @@ nav .link ul:hover {
     color: white;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   }
-  .second-section #youtube iframe {
-    margin-bottom: 80px;
-    border-radius: 5px;
-    width: 90%;
-    height: 40%;
-  }
   .overview {
     margin-top: 50px;
   }
   .overview .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
   .overview .container #plot-cast {
     width: 99vw;
@@ -664,23 +512,13 @@ nav .link ul:hover {
     margin: 0 6px;
   }
 }
-
 @media (max-width: 1400px) and (min-width: 1000px) {
-  .second-section #youtube iframe {
-    width: 70%;
-    height: 40%;
-  }
   .overview {
     margin-top: 50px;
   }
   .overview .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
   .overview .container #plot-cast {
     width: 99vw;
@@ -716,16 +554,9 @@ nav .link ul:hover {
     width: 99vw;
   }
 }
-
 @media (max-width: 1800px) and (min-width: 1400px) {
-  .second-section #youtube iframe {
-    width: 70%;
-    height: 50%;
-  }
   .overview .container {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   .overview .container #plot-cast #plot {
     width: 80%;
@@ -737,8 +568,6 @@ nav .link ul:hover {
     font-size: 1.5em;
   }
   .overview .container #plot-cast #cast {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   .overview .container #plot-cast #cast .crew-list div {
@@ -761,16 +590,9 @@ nav .link ul:hover {
     width: 90%;
   }
 }
-
 @media (max-width: 2226px) and (min-width: 1800px) {
-  .second-section #youtube iframe {
-    width: 70%;
-    height: 50%;
-  }
   .overview .container {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   .overview .container #plot-cast #plot {
     width: 80%;
@@ -782,8 +604,6 @@ nav .link ul:hover {
     font-size: 1.5em;
   }
   .overview .container #plot-cast #cast {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   .overview .container #plot-cast #cast .crew-list div {
@@ -806,4 +626,9 @@ nav .link ul:hover {
     width: 80%;
   }
 }
-/*# sourceMappingURL=style.css.map */
+@media (max-width: 900px) {
+  #vid-item {
+    width: 98% !important;
+    height: 98% !important;
+  }
+}/*# sourceMappingURL=style.css.map */
